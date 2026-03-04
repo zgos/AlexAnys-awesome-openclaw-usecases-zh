@@ -1,6 +1,6 @@
 # 会议纪要与待办事项自动化
 
-> 翻译自 [awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases)，含国内适配（飞书妙记 / 腾讯会议 / 钉钉）。
+> 含国内适配：飞书妙记 / 腾讯会议 / 钉钉
 
 刚开完一场 45 分钟的团队会议，你需要写会议纪要、提取行动项，然后分别录入 Jira、Linear 或待办清单——全靠手动。等你处理完，下一场会议已经开始了。如果在转录文本落地的那一刻，你的智能体就自动搞定这一切呢？
 

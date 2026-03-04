@@ -1,5 +1,7 @@
 # 开发前创意验证器
 
+> 翻译自 [awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases)，含国内适配（百度指数 / 微信指数 / V2EX / 少数派）。
+
 在 OpenClaw 动手写代码之前，它会自动检查你的创意是否已经存在——扫描 GitHub、Hacker News、npm、PyPI 和 Product Hunt 五大数据源，根据竞争程度决定下一步行动。
 
 ## 功能介绍

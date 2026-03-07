@@ -7,12 +7,12 @@
 
 <h3>OpenClaw AI 智能体最佳真实用例大全</h3>
 
-<p>39 个经过验证的真实场景，手把手教你用 AI 智能体自动化工作与生活</p>
+<p>40 个经过验证的真实场景，手把手教你用 AI 智能体自动化工作与生活</p>
 
 <br/>
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![用例数量](https://img.shields.io/badge/用例-39-blue?style=flat-square)
+![用例数量](https://img.shields.io/badge/用例-40-blue?style=flat-square)
 ![中文](https://img.shields.io/badge/语言-简体中文-red?style=flat-square)
 ![新手友好](https://img.shields.io/badge/难度-新手友好-green?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)

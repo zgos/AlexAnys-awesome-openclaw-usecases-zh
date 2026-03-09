@@ -31,9 +31,14 @@
 | **安装复杂度** | 需额外安装 CLI 工具 + OAuth | 内置即用，`openclaw channels add` |
 | **维护方** | 飞书团队 | OpenClaw 社区 |
 
-**简单说**：主要用飞书做聊天入口 → 选内置插件（简单）；需要 AI 帮你操作文档、建表、约会议 → 选飞书官方插件（功能强）。两者不能同时启用。
+**简单说**：主要用飞书做聊天入口 → 选内置插件（简单）；需要 AI 帮你操作文档、建表、约会议 → 选飞书官方插件（功能强）。
 
-详细对比和迁移指南见 [openclaw-feishu 社区指南](https://github.com/AlexAnys/openclaw-feishu)。
+> ⚠️ **两种插件互斥，只能启用一个。** 安装飞书官方插件时会自动禁用内置插件。如果两个都装了，会出现 `duplicate plugin id` 报错导致飞书功能不可用。遇到这种情况，删除用户目录下的副本即可：
+> ```bash
+> rm -rf ~/.openclaw/extensions/feishu
+> openclaw gateway restart
+> ```
+> 详细对比和迁移指南见 [openclaw-feishu 社区指南](https://github.com/AlexAnys/openclaw-feishu)。
 
 ## 如何设置
 

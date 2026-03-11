@@ -1,6 +1,6 @@
 # AI 文件管理器（Claw Drive）
 
-> 含国内适配：坚果云 WebDAV 同步 / 本地化分类 / 中文搜索场景
+> 含国内适配：坚果云 / 中文分类目录
 
 不再手动整理文件。把文件发给你的 OpenClaw 智能体，它会自动分类、打标签、去重并建立索引。之后用自然语言就能找到任何文件——不用再翻无尽的文件夹。
 
@@ -105,7 +105,8 @@ automatically.
 claw-drive/
 ├── invoice/          # 发票（增值税发票、电子发票、定额发票）
 ├── contract/         # 合同（租房、劳动、保险、购房）
-├── certificate/      # 证件（身份证、户口本、学历、资格证）
+├── certificate/      # 证件（学历、资格证、驾驶证）
+├── identity/         # 身份证件（身份证、户口本、护照、港澳通行证）
 ├── finance/          # 财务（银行流水、信用卡账单、理财记录）
 ├── medical/          # 医疗（体检报告、病历、处方、医保记录）
 ├── insurance/        # 保险（车险、医疗险、寿险保单）
@@ -125,7 +126,8 @@ claw-drive/
 For my Claw Drive file organization, use these China-specific categories:
 - invoice/ for fapiao (发票), VAT invoices, e-invoices
 - contract/ for rental, employment, insurance, and purchase contracts
-- certificate/ for ID cards, hukou, diplomas, professional certificates
+- certificate/ for diplomas, professional certificates, driving licenses
+- identity/ for ID cards, hukou, passports, travel permits (高敏感, sensitive mode only)
 - finance/ for bank statements, credit card bills, investment records
 - medical/ for health checkups, medical records, prescriptions
 - insurance/ for auto, health, life insurance policies
@@ -208,6 +210,8 @@ Do NOT sync the identity/ and certificate/ folders — keep those local only.
 
 Claw Drive 的自然语言搜索在中文场景下特别实用：
 
+> 搜索效果取决于索引时是否读取了文件内容。使用 sensitive mode 的文件仅支持文件名匹配，不支持内容搜索。
+
 | 你的问题 | 智能体会找到 |
 |---------|------------|
 | "去年的体检报告" | `medical/health-checkup-2025.pdf` |
@@ -232,3 +236,7 @@ Claw Drive 的自然语言搜索在中文场景下特别实用：
 - [坚果云 WebDAV 帮助文档](https://help.jianguoyun.com/?p=2064) — 第三方应用授权配置
 - [rclone 官方文档](https://rclone.org/webdav/) — WebDAV 配置指南
 - [AList 项目](https://github.com/AlistGo/alist) — 多网盘统一 WebDAV 接口（桥接阿里云盘等）
+
+---
+
+**原文链接**：[English Version](https://github.com/hesamsheikh/awesome-openclaw-usecases/pull/26)

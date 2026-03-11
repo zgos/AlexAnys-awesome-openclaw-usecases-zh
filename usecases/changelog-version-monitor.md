@@ -105,7 +105,8 @@ curl -s "https://gitee.com/api/v5/repos/hiyouga/LLaMA-Factory/releases?per_page=
 ```text
 Set up a version monitor that checks both GitHub and Gitee releases:
 - GitHub: langchain-ai/langchain, vllm-project/vllm, ollama/ollama
-- Gitee: hiyouga/LLaMA-Factory, PaddlePaddle/Paddle
+- Gitee: hiyouga/LLaMA-Factory
+- GitHub: PaddlePaddle/Paddle
 
 Store last-known versions in ~/version-monitor/state.json.
 Check every morning at 9am. Only notify when versions change.
@@ -204,18 +205,19 @@ curl -X POST "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=YOUR_KEY" \
 | [LangChain](https://github.com/langchain-ai/langchain) | GitHub / PyPI | LLM 应用开发框架 |
 | [Ollama](https://github.com/ollama/ollama) | GitHub | 本地大模型运行工具 |
 | [Dify](https://github.com/langgenius/dify) | GitHub | LLM 应用开发平台 |
-| [PaddlePaddle](https://gitee.com/paddlepaddle/Paddle) | Gitee / GitHub | 百度深度学习框架 |
+| [PaddlePaddle](https://github.com/PaddlePaddle/Paddle) | GitHub / PyPI | 百度深度学习框架 |
 | [OpenClaw](https://github.com/openclaw/openclaw) | GitHub | 你正在使用的 AI 智能体平台 |
 | [MindSpore](https://gitee.com/mindspore/mindspore) | Gitee | 华为 AI 计算框架 |
 | [FastGPT](https://github.com/labring/FastGPT) | GitHub | 知识库问答平台 |
-| [ChatGLM](https://github.com/THUDM/ChatGLM-6B) | GitHub | 清华开源对话模型 |
+| [GLM-4](https://github.com/THUDM/GLM-4) | GitHub | 清华智谱开源大模型 |
 
 **添加监控的提示词示例**：
 
 ```text
 Set up version monitoring for my AI development stack:
 - GitHub releases: hiyouga/LLaMA-Factory, vllm-project/vllm, langchain-ai/langchain, ollama/ollama, langgenius/dify
-- Gitee releases: PaddlePaddle/Paddle, mindspore/mindspore
+- Gitee releases: mindspore/mindspore
+- GitHub releases (additional): PaddlePaddle/Paddle
 - PyPI: langchain, transformers, torch
 
 Check daily at 9am. Send updates to my DingTalk group via webhook.
@@ -226,8 +228,8 @@ Store state in ~/version-monitor/state.json.
 
 ### 实用建议
 
-- **Gitee 镜像仓库**：很多国际项目在 Gitee 上有官方镜像（如 PaddlePaddle），可以直接使用 Gitee API 获取 releases，访问更快更稳定
-- **RSS 替代方案**：如果 API 调用受限，可以使用 [RSSHub](https://docs.rsshub.app/) 生成 Gitee 仓库的 RSS 订阅源，路径格式为 `/gitee/releases/{owner}/{repo}`
+- **Gitee 镜像仓库**：很多国际项目在 Gitee 上有官方镜像，可以直接使用 Gitee API 获取 releases，访问更快更稳定。注意部分项目可能未在 Gitee 发布 releases，使用前请先验证
+- **RSS 替代方案**：如果 API 调用受限，可以使用 [RSSHub](https://docs.rsshub.app/) 生成 Gitee 仓库的 RSS 订阅源，具体路由格式请参考 [RSSHub 文档](https://docs.rsshub.app/)
 - **多通道推送**：可以同时推送到钉钉（开发组）和飞书（管理层），不同群组关注不同项目
 - **PyPI 国内镜像**：检查 Python 包版本时，可使用清华镜像源 `https://pypi.tuna.tsinghua.edu.cn/simple/` 加速访问
 
@@ -240,3 +242,7 @@ Store state in ~/version-monitor/state.json.
 - [钉钉自定义机器人文档](https://open.dingtalk.com/document/orgapp/custom-robots-send-group-messages) — 钉钉 webhook 配置指南
 - [飞书自定义机器人文档](https://open.feishu.cn/document/client-docs/bot-v3/add-custom-bot) — 飞书 webhook 配置指南
 - [企业微信群机器人文档](https://developer.work.weixin.qq.com/document/path/91770) — 企业微信 webhook 配置指南
+
+---
+
+**原文链接**：[English Version](https://github.com/hesamsheikh/awesome-openclaw-usecases/pull/23)
